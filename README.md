@@ -63,6 +63,6 @@ The label file contains 13 columns:
 
 
 
-You can use the python notebook to visualize the 3D boxes: get the [notebook here](https://github.com/Plasma-Lab/Unreal-2D-Bounding-Box-Plugin/blob/main/3D_Bounding_box_projection.ipynb). (only for the CSV format)
+You can use the python notebook to visualize the 3D boxes: get the [notebook here](https://github.com/Plasma-Lab/Unreal-3D-Bounding-Box-Plugin/blob/main/3D_Bounding_box_projection.ipynb). (only for the CSV format)
 
 ![results](https://github.com/Plasma-Lab/Unreal-3D-Bounding-Box-Plugin/blob/main/images/result.png?raw=true)
