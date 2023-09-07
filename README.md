@@ -9,7 +9,7 @@ Welcome to the documentation of the Unreal 3D Bounding Box Plugin. A plugin desi
 For each element in your scene you wish to track, add two ***actor tags*** to your element's actor: the first tag is your label (e.g., "car"), and the second tag must be "3D". 
 The first tag will be used in the label file. The second tag is just here to tell the plugin to track the actor.
 
-![actor tags](https://github.com/Plasma-Lab/Unreal-2D-Bounding-Box-Plugin/blob/main/images/tags.PNG?raw=true)
+![actor tags](https://github.com/Plasma-Lab/Unreal-3D-Bounding-Box-Plugin/blob/main/images/tags.PNG?raw=true)
 
 ## Setup the camera
 
@@ -17,15 +17,15 @@ The plugin uses a custom camera to be able to extract the 3D bounding boxes.
 The camera is in the "content" folder of the plugin with the name **BP_3DBB_Camera**.  Drop the camera in the scene and point it in direction of the tracked objects.
 You can see what the camera sees by opening the file next to it called **RT_Capture**.
 
-![files](https://github.com/Plasma-Lab/Unreal-2D-Bounding-Box-Plugin/blob/main/images/files.PNG?raw=true)
+![files](https://github.com/Plasma-Lab/Unreal-3D-Bounding-Box-Plugin/blob/main/images/files.PNG?raw=true)
 
-![camera](https://github.com/Plasma-Lab/Unreal-2D-Bounding-Box-Plugin/blob/main/images/camera.PNG?raw=true)
+![camera](https://github.com/Plasma-Lab/Unreal-3D-Bounding-Box-Plugin/blob/main/images/camera.PNG?raw=true)
 
 ## Setup bounding box tracking
 
 By default, the plugin will take 1920x1080 screenshots but you can choose a different resolution and FOV in the details pannel in the  **BP_3DBB_Camera**.
 
-![camera settings](https://github.com/Plasma-Lab/Unreal-2D-Bounding-Box-Plugin/blob/main/images/camera_settings.PNG?raw=true)
+![camera settings](https://github.com/Plasma-Lab/Unreal-3D-Bounding-Box-Plugin/blob/main/images/camera_settings.PNG?raw=true)
 
 
 ## Take captures
@@ -33,7 +33,7 @@ By default, the plugin will take 1920x1080 screenshots but you can choose a diff
 Now to take screen captures with bounding box label file, just use the **Take Screenshot With 3D Bounding Box** blueprint.
 You can either bind this blueprint to a keyboard key and tie the camera to your player view or program camera movements and automaticaly fire screenshots. (The plugin doesn't support this, you have to set this up yourself.) 
 
-![screenshot](https://github.com/Plasma-Lab/Unreal-2D-Bounding-Box-Plugin/blob/main/images/blueprint.PNG?raw=true)
+![screenshot](https://github.com/Plasma-Lab/Unreal-3D-Bounding-Box-Plugin/blob/main/images/blueprint.PNG?raw=true)
 
 Just set a path to save the captures, press Play and fire the blueprint!
 You also have the option to: 
@@ -46,7 +46,7 @@ It will create 3 folders when taking the captures:
 - calib: contains the intrinsics matrix, necessary to project the bounding boxes to screen
 
 # What's in the label file?
-![csv](https://github.com/Plasma-Lab/Unreal-2D-Bounding-Box-Plugin/blob/main/images/label_file.PNG?raw=true)
+![csv](https://github.com/Plasma-Lab/Unreal-3D-Bounding-Box-Plugin/blob/main/images/label_file.PNG?raw=true)
 
 The label file contains 13 columns:
 
@@ -65,4 +65,4 @@ The label file contains 13 columns:
 
 You can use the python notebook to visualize the 3D boxes: get the [notebook here](https://github.com/Plasma-Lab/Unreal-2D-Bounding-Box-Plugin/blob/main/2D_Bounding_boxes.ipynb). (only for the CSV format)
 
-![results](https://github.com/Plasma-Lab/Unreal-2D-Bounding-Box-Plugin/blob/main/images/result.PNG?raw=true)
+![results](https://github.com/Plasma-Lab/Unreal-3D-Bounding-Box-Plugin/blob/main/images/result.png?raw=true)
